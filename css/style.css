@@ -1,0 +1,401 @@
+/*---MAIN CSS---*/
+
+body{
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+/*---END OF MAIN CSS---*/
+
+/*---HEADER---*/
+
+.header{
+	background-image: url('../img/background.png');
+	background-repeat: repeat;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	padding-top: 30px;
+}
+
+.header h1{
+	font-family: 'Pacifico', sans-serif;
+	color: white;
+	text-shadow: rgba(0, 0, 0, .2) 3px 4px;
+	font-size: 4.5em;
+	padding-top: 60px;
+}
+
+.header p{
+	color: white;
+	font-size: 1.5em;
+	text-shadow: rgba(0, 0, 0, .2) 1px 2px;
+}
+
+.header ul{
+	padding-left: 0px;
+}
+
+.header li{
+	font-size: 2em;
+	display: inline-block;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	padding: 5px 14px;
+	border-radius: 50%;
+	transition: opacity ease-in-out 350ms;
+	opacity: 0.5;
+	margin-right: 10px;	
+}
+
+.header li:hover{
+	opacity: 1;
+}
+
+.header a{
+	color: white;
+}
+
+.header a:hover{
+	color: white;
+}
+
+.header i:hover{
+	color: white;
+}
+
+.hand{
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+	.div_hand{
+		display: none;
+	}
+
+	.div_text_header{
+		text-align: center;
+		margin-top: -50px;
+    	margin-bottom: 70px;
+	}
+}
+
+/*---END OF HEADER---*/
+
+/*---FEATURES SECTION---*/
+
+.section_features{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.section_features p{
+	color: #848484;
+}
+
+.feature_item{
+	margin-top: 30px; 
+}
+
+.features_border_vertical {
+	border-left: 1px solid #e3e3e3;
+	position: absolute;
+	top: 5%;
+	bottom: 5%;
+	content: "";
+	left: 0px;
+}
+
+/*.features_border_horizontal {
+	border: 1px solid #e3e3e3;
+	right: 5%;
+	left: 5%;
+	content: "";
+}*/
+
+.section_features h2{
+	color: #222;
+	font-family: 'Myriad Pro', 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.875em;
+	margin-bottom: 0.83em;
+	margin-top: 0.83em;
+}
+
+.feature_icons{
+	max-width: 100%;
+	margin-top: 40px;
+}
+
+/*---END OF FEATURES SECTION---*/
+
+/*---VIDEO SECTION---*/
+
+.section_video{
+	background-color: #e7e7e7;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.section_video h2{
+	color: #222;
+	font-family: 'Myriad Pro', 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.875em;
+	margin-bottom: 0.83em;
+	margin-top: 0.83em;
+}
+
+.section_video p, .section_video li{
+	color: #848484;
+}
+
+.section_video .list_text_video{
+	list-style-type: none;
+}
+
+.section_video li::before{
+	content: '\f054';
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-right: 0.4em;
+	color: black;
+	vertical-align: bottom;
+}
+
+@media only screen and (max-width: 992px) {
+	.section_video iframe{
+		margin-top: 20px;
+	}
+}	
+/*---END OF VIDEO SECTION---*/
+
+/*---TESTIMONIALS SECTION---*/
+
+.section_testimonials{
+	padding-bottom: 40px;
+}
+
+.testimonials_text{
+	color: #848484;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  text-align:center;
+}
+
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -30px;
+  margin-right: -19px;
+}
+
+#quote-carousel li{
+	background-color: white;
+	border: 2px solid #3498db;
+	width: 15px;
+	height: 15px;
+}
+
+#quote-carousel .carousel-indicators .active {
+	background: #3498db;
+	margin-bottom:1px;
+}
+
+/*---END OF TESTIMONIALS SECTION---*/
+
+/*---PRICING SECTION---*/
+
+.section_pricing {
+    background-color: #e7e7e7;
+    text-align: center;
+    padding: 1em;
+}
+
+.section_pricing h2{
+	color: #222;
+	font-family: 'Myriad Pro', 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.875em;
+	margin-bottom: 0.83em;
+	margin-top: 0.83em;
+}
+
+.section_pricing p{
+	color: #848484;
+}
+
+.pricing_plan {
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.pricing_plan_name {
+    color: #fff;
+    background-color: #3498db;
+    font-family: 'Myriad Pro', 'PT Sans', sans-serif;
+    font-size: 1.75em;
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+.pricing_plan_price {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 2.625em;
+}
+
+.pricing_plan_price span {
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+.pricing_plan_features {
+    list-style-type: none;
+    padding: 0 1em;
+    margin: 0;
+    color: #848484;
+}
+
+.pricing_plan_features_item {
+    border-top: 1px solid #c2c2c2;
+    padding: 0.5em 0;
+}
+
+.pricing_plan_action {
+    background-color: #3498db;
+}
+
+.pricing_plan_button {
+    background-color: #0d74b9;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8em 2em;
+    margin: 1em 0;
+    display: inline-block;
+}
+
+.pricing_plan_button:hover {
+	text-decoration: none;
+}	
+
+@media (min-width: 768px) {
+    .pricing_plan {
+        width: 24%;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 2;
+        position: relative;
+    }
+}
+
+/*---END OF PRINCING SECTION---*/
+
+/*---SOCIAL SECTION---*/
+
+.section_contact {
+    background-color: #fff;
+    text-align: center;
+    padding: 1em 1em 2em 1em;
+}
+
+.section_contact h2{
+    color: #222;
+	font-family: 'Myriad Pro', 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.875em;
+	margin-bottom: 0.83em;
+	margin-top: 0.83em;
+}
+
+.section_contact p{
+	color: #848484;
+}
+
+.contact_social {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact_social_item {
+    display: inline;
+}
+
+.contact_social_item a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+    background-color: #d4d4d4;
+    font-size: 1.7em;
+    padding: 0.2em;
+    border-radius: 50%;
+    transition: all ease-in-out 200ms;
+}
+
+.contact_social_item a:hover {
+	color: white;
+    background-color: #3498db;
+}
+
+.contact_social_item:not(:last-child) {
+    margin-right: 0.1em;
+}
+
+.contact_social_item i {
+    width: 31px;
+}
+
+@media (min-width: 768px) {
+    .section_contact {
+        position: relative;
+        top: -7em;
+        margin-bottom: -50px;
+        padding: 8em 1em 1em 1em;
+    }
+}
+
+/*---FOOTER---*/
+
+.footer {
+    background-color: #e3e3e3;
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.footer a{
+    color: #848484;;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #848484;;
+    text-decoration: none;
+}
+
+.footer a:not(:nth-child(3n)) {
+    margin-right: 2em;
+}
+
+.footer a:nth-child(3)::after {
+    content: '\A';
+    white-space: pre;
+}
+
+@media (min-width: 768px) {
+    .footer a:nth-child(3)::after {
+        content: '';
+    }
+    
+    .footer a {
+        margin-right: 2em;
+    }
+}
+
+/*---END OF FOOTER---*/
